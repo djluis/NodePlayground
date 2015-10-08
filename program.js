@@ -1,12 +1,11 @@
-var fs = require('fs');
+var FileOperations = require('./FileOperations');
 
-var fileBuffer = fs.readFile(
-	process.argv[2],
-	'utf8', 
-	function readAsyncOp(err,data){
-		console.log(data.split('\n').length -1);
-	}
-);
-
-
-
+FileOperations(
+	process.argv[2], 
+	process.argv[3], 
+		function(err,data){
+		if(err)	
+			console.log(err);
+		else
+			console.log(data);
+});
