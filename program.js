@@ -4,8 +4,12 @@ FileOperations(
 	process.argv[2], 
 	process.argv[3], 
 		function(err,data){
-		if(err)	
+		if(err){
 			console.log(err);
-		else
-			console.log(data);
+		}
+		else{
+			data.forEach(function(element){
+				console.log(element)
+			});
+		}
 });

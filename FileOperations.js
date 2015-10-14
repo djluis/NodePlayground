@@ -10,11 +10,12 @@ module.exports = function(dir,extension,returnCallback) {
 					return returnCallback(err,null);
 
 				var totalFiles = [];
+				
 				for (i = 0; i < list.length; i++) { 
 					if( path.extname(list[i]) == ('.'+extension))
 						totalFiles.push(list[i]);
 				}
-
+				
 				return returnCallback(null,totalFiles);
 			}
 		);
