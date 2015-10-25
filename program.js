@@ -1,5 +1,5 @@
 'use strict';
-var HttpOperations = require('./HttpOperations');
+var HttpOperations = require('./BlHttpOperations');
 
 HttpOperations(
 		process.argv[2],
