@@ -1,8 +1,10 @@
 'use strict';
-var HttpOperations = require('./BlHttpOperations');
+var JugglingAsync = require('./JugglingAsync');
 
-HttpOperations(
+JugglingAsync(
 		process.argv[2],
+		process.argv[3],
+		process.argv[4],
 		function(err,data){
 		if(err){
 			console.log(err);
