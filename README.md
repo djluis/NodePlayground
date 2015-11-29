@@ -1,7 +1,5 @@
 # NodePlayground
 
-I have no idea what I a'm doing here!?! 
-
 ![alt tag](https://i.imgflip.com/o6hnw.jpg)
 
 # Requirements
